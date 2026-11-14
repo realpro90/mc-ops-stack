@@ -1,0 +1,16 @@
+items:
+  redirect:
+    display_name: '&#00d9ff&lOPEN SERVER SELECTOR'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Click to view servers'
+    material: COMPASS
+    slot: 13
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fSERVERS'
+open_command:
+- network
+- hubmenu
+- teenfounders
+register_command: true
+size: 36

@@ -1,0 +1,93 @@
+items:
+  axiom:
+    display_name: '&#00d9ff&lAXIOM BUILD SUITE'
+    lore:
+    - '&7Axiom Paper plugin active.'
+    - '&7Use with client Axiom mod.'
+    material: AMETHYST_SHARD
+    slot: 13
+  back:
+    display_name: '&#00d9ff&l« ALL SERVERS'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Open full server selector'
+    material: ARROW
+    slot: 31
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 28
+    - 30
+    - 32
+    - 34
+  ci:
+    display_name: '&c&lCLEAR INVENTORY'
+    left_click_commands:
+    - '[player] ci'
+    - '[close]'
+    lore:
+    - '&c▶ Click to clear (/ci)'
+    material: LAVA_BUCKET
+    slot: 15
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 35
+  fawe:
+    display_name: '&#00d9ff&lWORLDEDIT //WAND'
+    left_click_commands:
+    - '[player] /wand'
+    - '[close]'
+    lore:
+    - '&#00d9ff▶ Click to receive wand'
+    material: WOODEN_AXE
+    slot: 11
+  header:
+    display_name: '&d&lCREATIVE BUILDER TOOLS'
+    lore:
+    - '&7Tools & shortcuts for Creative building.'
+    material: DIAMOND_PICKAXE
+    slot: 4
+  lobby_switch:
+    display_name: '&#00d9ff&lRETURN TO LOBBY'
+    left_click_commands:
+    - '[connect] lobby'
+    lore:
+    - '&#00d9ff▶ Click to connect'
+    material: BEACON
+    slot: 23
+  time:
+    display_name: '&e&lSET TIME DAY'
+    left_click_commands:
+    - '[player] ptime day'
+    - '[close]'
+    lore:
+    - '&e▶ Click for personal daytime'
+    material: CLOCK
+    slot: 21
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &d&lCREATIVE'
+open_command:
+- creativemenu
+- buildmenu
+register_command: true
+size: 36

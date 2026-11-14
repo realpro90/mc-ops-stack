@@ -1,0 +1,110 @@
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &c&lPVP KITS'
+open_command:
+- pvp
+- kits
+- kitmenu
+register_command: true
+size: 36
+
+items:
+  border:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: '&8✦'
+    slots: [0, 1, 2, 3, 5, 6, 7, 8, 9, 17, 18, 26, 27, 28, 29, 30, 32, 33, 34, 35]
+
+  header:
+    material: NETHERITE_SWORD
+    slot: 4
+    display_name: '&#00d9ff&l✦ GLADIATORIAL PVP KITS ✦'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Select a combat loadout before entering'
+    - '&7the TeenFounders Arena (/warp arena).'
+    - '&8&m---------------------------------'
+
+  warrior:
+    material: DIAMOND_SWORD
+    slot: 11
+    display_name: '&#00d9ff&lWARRIOR LOADOUT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Balanced frontline assault kit:'
+    - '  &8• &bSharpness III Diamond Sword'
+    - '  &8• &fFull Protection II Diamond Armor'
+    - '  &8• &9Unbreaking Shield & 8x G-Apples'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to equip kit'
+    left_click_commands:
+    - '[player] kit warrior'
+    - '[close]'
+
+  archer:
+    material: BOW
+    slot: 12
+    display_name: '&#00d9ff&lSNIPER ARCHER'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Long-range precision marksman:'
+    - '  &8• &bPower III Punch I Infinity Bow'
+    - '  &8• &fFeather Falling Chain Armor'
+    - '  &8• &7Iron Sidearm Blade & 6x G-Apples'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to equip kit'
+    left_click_commands:
+    - '[player] kit archer'
+    - '[close]'
+
+  tank:
+    material: NETHERITE_CHESTPLATE
+    slot: 14
+    display_name: '&#00d9ff&lTITAN TANK'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Heavy defensive juggernaut:'
+    - '  &8• &bProtection III Netherite Plate'
+    - '  &8• &fProtection III Diamond Armor'
+    - '  &8• &cCrusher Axe & 10x G-Apples'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to equip kit'
+    left_click_commands:
+    - '[player] kit tank'
+    - '[close]'
+
+  scout:
+    material: FEATHER
+    slot: 15
+    display_name: '&#00d9ff&lSPEEDSTER SCOUT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7High mobility hit-and-run kit:'
+    - '  &8• &bSharpness III Speedster Dagger'
+    - '  &8• &bSpeed II Potion & 8x Pearls'
+    - '  &8• &fLightweight Cyan Armor'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to equip kit'
+    left_click_commands:
+    - '[player] kit scout'
+    - '[close]'
+
+  warp_arena:
+    material: BEACON
+    slot: 22
+    display_name: '&#00d9ff&l⚔ TELEPORT TO ARENA'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Warp directly to the 32x32 Deepslate'
+    - '&7Gladiatorial Arena at spawn.'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to teleport (/warp arena)'
+    left_click_commands:
+    - '[player] warp arena'
+    - '[close]'
+
+  close:
+    material: BARRIER
+    slot: 31
+    display_name: '&c&l✕ CLOSE'
+    lore:
+    - '&7Dismiss this menu'
+    left_click_commands:
+    - '[close]'

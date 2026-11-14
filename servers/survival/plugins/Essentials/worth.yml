@@ -1,0 +1,66 @@
+worth:
+  coal: 5.0
+  copper_ingot: 8.0
+  raw_copper: 6.0
+  iron_ingot: 15.0
+  raw_iron: 12.0
+  gold_ingot: 30.0
+  raw_gold: 25.0
+  redstone: 4.0
+  lapis_lazuli: 6.0
+  diamond: 100.0
+  emerald: 150.0
+  amethyst_shard: 10.0
+  netherite_scrap: 500.0
+  netherite_ingot: 2500.0
+
+  oak_log: 5.0
+  spruce_log: 5.0
+  birch_log: 5.0
+  jungle_log: 5.0
+  acacia_log: 5.0
+  dark_oak_log: 5.0
+  mangrove_log: 5.0
+  cherry_log: 5.0
+
+  cobblestone: 0.5
+  stone: 1.0
+  deepslate: 1.0
+  cobbled_deepslate: 0.5
+  sand: 1.0
+  gravel: 1.0
+  dirt: 0.5
+  obsidian: 25.0
+
+  wheat: 3.0
+  wheat_seeds: 0.5
+  carrot: 3.0
+  potato: 3.0
+  baked_potato: 5.0
+  beetroot: 3.0
+  beetroot_seeds: 0.5
+  sugar_cane: 4.0
+  pumpkin: 10.0
+  melon_slice: 2.0
+  sweet_berries: 2.0
+  golden_carrot: 25.0
+  golden_apple: 150.0
+  apple: 5.0
+  bread: 8.0
+  cooked_beef: 8.0
+  cooked_porkchop: 8.0
+  cooked_chicken: 6.0
+  cooked_mutton: 6.0
+
+  rotten_flesh: 2.0
+  bone: 4.0
+  string: 4.0
+  spider_eye: 5.0
+  gunpowder: 8.0
+  ender_pearl: 20.0
+  blaze_rod: 35.0
+  ghast_tear: 100.0
+  slime_ball: 15.0
+  magma_cream: 20.0
+  wither_skeleton_skull: 500.0
+  nether_star: 5000.0

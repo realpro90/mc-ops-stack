@@ -1,0 +1,257 @@
+admin:
+  accounts:
+    ip_not_found: '&cThis IP does not exist in the database.'
+    no_last_ip: '&cNo known last IP address for player.'
+    single_account: '&2%name is a single account player.'
+  antibot:
+    invalid_mode: '&cInvalid AntiBot mode!'
+    override_disabled: '&2AntiBot Manual Override: disabled!'
+    override_enabled: '&2AntiBot Manual Override: enabled!'
+    status: '&2AntiBot status: %status'
+  email_show: '&2%name''s email: %email'
+  force_login:
+    forbidden: '&cYou cannot force login the player %name!'
+    player_offline: '&cPlayer needs to be online!'
+    success: '&2Force login for %name performed!'
+  reload:
+    db_type_change: '&eNote: cannot change database type during /authme reload.'
+    error: '&cError occurred during reload of AuthMe.'
+  spawn:
+    first_not_defined: '&cFirst spawn has failed, please try to define the first spawn.'
+    first_set_fail: '&cSetFirstSpawn has failed, please retry.'
+    first_set_success: '&2Correctly defined new first spawn point.'
+    not_defined: '&cSpawn has failed, please try to define the spawn.'
+    set_fail: '&cSetSpawn has failed, please retry.'
+    set_success: '&2Correctly defined new spawn point.'
+antibot:
+  auto_disabled: '&2[AntiBotService] AntiBot disabled after %m minutes!'
+  auto_enabled: '&4[AntiBotService] AntiBot enabled due to the huge number of connections!'
+  kick_antibot: AntiBot protection mode is enabled! You have to wait some minutes
+    before joining the server.
+captcha:
+  captcha_for_registration: 'To register you have to solve a captcha first, please
+    use the command: /captcha %captcha_code'
+  register_captcha_valid: '&2Valid captcha! You may now register with /register'
+  usage_captcha: '&3To log in you have to solve a captcha code, please use the command:
+    /captcha %captcha_code'
+  valid_captcha: '&2Captcha code solved correctly!'
+  wrong_captcha: '&cWrong captcha, please type "/captcha %captcha_code" into the chat!'
+command:
+  detailed_help: '&6Detailed help: &f/%cmd'
+  did_you_mean: '&eDid you mean &6%cmd&e?'
+  failed_to_parse: '&4Failed to parse AuthMe command!'
+  incorrect_arguments: '&4Incorrect command arguments!'
+  player_only: '&cThis command is only for players.'
+  player_only_alternative: '&cPlayer only! Please use %alternative instead.'
+  see_help: '&eUse the command &6/%cmd&e to view help.'
+  unknown: '&4Unknown command!'
+dialog:
+  button:
+    cancel: '&8Dismiss'
+  login:
+    body: '&b&lTEENFOUNDERS%nl%&7Build • Learn • Launch%nl%%nl%&fEnter your password to continue:'
+    button: '&b✦ Sign In'
+    password: '&bPassword'
+    recovery_button: '&9Forgot Password?'
+    recovery_email: '&7Recovery Email (optional)'
+    title: '&8✦ &b&lTEENFOUNDERS &8| &fSign In'
+  recovery:
+    body: '&7Enter your registered email address to receive reset instructions.'
+    button: '&b✦ Send Recovery Email'
+    email: '&bEmail Address'
+    title: '&8✦ &b&lTEENFOUNDERS &8| &fPassword Recovery'
+  register:
+    body: '&b&lTEENFOUNDERS%nl%&7Build • Learn • Launch%nl%%nl%&fEnter your password to continue:'
+    button: '&b✦ Create Account'
+    confirm_email: '&7Confirm Email'
+    confirm_password: '&bConfirm Password'
+    email: '&7Email (optional recovery)'
+    password: '&bChoose Password'
+    title: '&8✦ &b&lTEENFOUNDERS &8| &fJoin Network'
+  two_factor:
+    body: '&7Enter your 6-digit verification code.'
+    button: '&b✦ Verify'
+    code: '&b2FA Code'
+    title: '&8✦ &b&lTEENFOUNDERS &8| &f2-Factor Auth'
+email:
+  add_email_request: '&3Please add your email to your account with the command: /email
+    add <yourEmail> <confirmEmail>'
+  add_not_allowed: '&cAdding email was not allowed.'
+  added: '&2Email address successfully added to your account!'
+  already_used: '&4The email address is already being used'
+  change_not_allowed: '&cChanging email was not allowed.'
+  change_password_expired: You cannot change your password using this command anymore.
+  changed: '&2Email address changed correctly!'
+  confirm_code_expired: '&cNo pending email confirmation found. Please start the process
+    again.'
+  confirm_code_sent: '&3A verification code has been sent to &f%email&3. Use &f/email
+    confirm <code>&3 to confirm.'
+  confirm_success: '&2Email address confirmed and saved to your account!'
+  confirm_wrong_code: '&cWrong confirmation code. Please try again.'
+  email_cooldown_error: '&cAn email was already sent recently. You must wait %time
+    before you can send a new one.'
+  email_show: '&2Your current email address is: &f%email'
+  incomplete_settings: 'Error: not all required settings are set for sending emails.
+    Please contact an admin.'
+  invalid: '&cInvalid email address, try again!'
+  new_email_invalid: '&cInvalid new email, try again!'
+  no_email_for_account: '&2You currently don''t have email address associated with
+    this account.'
+  old_email_invalid: '&cInvalid old email, try again!'
+  request_confirmation: '&cPlease confirm your email address!'
+  send_failure: The email could not be sent. Please contact an administrator.
+  usage_email_add: '&cUsage: /email add <email> <confirmEmail>'
+  usage_email_change: '&cUsage: /email change <oldEmail> <newEmail>'
+  usage_email_confirm: '&cUsage: /email confirm <code>'
+error:
+  denied_chat: '&8[§bTEENFOUNDERS&8] &cYou must authenticate before chatting!'
+  denied_command: '&8[§bTEENFOUNDERS&8] &cYou must authenticate before running commands!'
+  kick_for_vip: '&3A VIP player has joined the server when it was full!'
+  kick_unresolved_hostname: '&cAn error occurred: unresolved player hostname!'
+  logged_in: '&cYou''re already logged in!'
+  max_registration: '&cYou have exceeded the maximum number of registrations (%reg_count/%max_acc
+    %reg_names) for your connection!'
+  no_permission: '&4You don''t have the permission to perform this action!'
+  not_logged_in: '&8[§bTEENFOUNDERS&8] &cYou must log in to proceed!'
+  tempban_max_logins: '&8[§bTEENFOUNDERS&8] &cToo many failed attempts. You have been
+    temporarily suspended.'
+  unexpected_error: '&4An unexpected error occurred, please contact an administrator!'
+  unregistered_user: '&8[§bTEENFOUNDERS&8] &cAccount not found. Please register with
+    /register <pwd> <pwd>'
+login:
+  command_usage: '&8[§bTEENFOUNDERS&8] &cUsage: /login <password>'
+  login_request: '&8&m----------------------------------------------------%nl%&b&l                  ▲%nl%&b&l                 ▲
+    ▲%nl%&b&l                ▲   ▲%nl%&f&l               ▲  ▲  ▲%nl%&b&l              ▲▲▲
+    ▲ ▲▲▲%nl%&b&l            TEENFOUNDERS%nl%&7              Build  •  Learn  •  Launch%nl%&8&m----------------------------------------------------%nl%&f  Welcome
+    back to &bTeenFounders&f!%nl%&7  Please enter your password to play:%nl%&8  »
+    &b/login <password>%nl%&8&m----------------------------------------------------'
+  success: '&8[§bTEENFOUNDERS&8] &aAuthentication successful! Welcome to TeenFounders.'
+  timeout_error: '&8[§bTEENFOUNDERS&8] &cAuthentication timed out. Please reconnect
+    to try again.'
+  wrong_password: '&8[§bTEENFOUNDERS&8] &cIncorrect password. Please verify and try
+    again.'
+misc:
+  account_not_activated: '&cYour account isn''t activated yet, please check your emails!'
+  accounts_owned_other: 'The player %name has %count accounts:'
+  accounts_owned_self: 'You own %count accounts:'
+  logout: '&2Logged out successfully!'
+  password_changed: '&2Password changed successfully!'
+  reload: '&2Configuration and database have been reloaded correctly!'
+  usage_change_password: '&cUsage: /changepassword <oldPassword> <newPassword>'
+on_join_validation:
+  characters_in_name: '&4Your username contains illegal characters. Allowed chars:
+    %valid_chars'
+  country_banned: '&4Your country is banned from this server!'
+  invalid_name_case: You should join using username %valid, not %invalid.
+  kick_full_server: '&4The server is full, try again later!'
+  name_length: '&4Your username is either too short or too long!'
+  not_owner_error: You are not the owner of this account. Please choose another name!
+  quick_command: You used a command too fast! Please, join the server again and wait
+    more before using any command.
+  same_ip_online: A player with the same IP is already in game!
+  same_nick_online: '&4The same username is already playing on the server!'
+password:
+  forbidden_characters: '&4Your password contains illegal characters. Allowed chars:
+    %valid_chars'
+  match_error: '&8[§bTEENFOUNDERS&8] &cPasswords do not match. Please re-enter carefully.'
+  name_in_password: '&8[§bTEENFOUNDERS&8] &cPassword cannot contain your username
+    for safety.'
+  unsafe_password: '&8[§bTEENFOUNDERS&8] &cPassword is too weak. Please choose a stronger
+    password.'
+  wrong_length: '&8[§bTEENFOUNDERS&8] &cPassword length is invalid (must be 4-30 characters).'
+premium:
+  account_not_found: '&cNo Mojang account found for your username.'
+  admin:
+    account_not_found: '&cNo Mojang account found for %name.'
+    already_enabled: '&ePremium mode is already enabled for %name.'
+    disable_success: '&2Premium mode disabled for %name.'
+    enable_success: '&2Premium mode enabled for %name.'
+    impostor_kicked: '&eA player online as %name had a mismatched UUID and has been
+      kicked.'
+    kick_reason: '&cPremium settings for your account have been changed by an admin.
+      Please reconnect.'
+    not_enabled: '&ePremium mode is not enabled for %name.'
+    not_registered: '&c%name is not registered.'
+    pending: '&ePremium verification pending for %name. They must reconnect to confirm
+      ownership of the Mojang account.'
+  already_enabled: '&ePremium mode is already enabled for your account.'
+  disable_success: '&2Premium mode disabled. You will need to authenticate again.'
+  enable_success: '&2Premium mode enabled! You will no longer need to authenticate
+    on login.'
+  error: '&cAn error occurred while verifying your premium status. Please try again
+    later.'
+  feature_disabled: '&cPremium mode is not enabled on this server.'
+  not_enabled: '&ePremium mode is not enabled for your account.'
+  pending_fail: '&cPremium verification failed. Please log in with your password.'
+  pending_kick: '&ePremium verification requested. Please reconnect to confirm ownership
+    of your Mojang account.'
+recovery:
+  code:
+    change_password: Please use the command /email setpassword <new password> to change
+      your password immediately.
+    code_sent: A recovery code to reset your password has been sent to your email.
+    correct: Recovery code entered correctly!
+    incorrect: The recovery code is not correct! You have %count tries remaining.
+    tries_exceeded: You have exceeded the maximum number attempts to enter the recovery
+      code. Use "/email recovery [email]" to generate a new one.
+  command_usage: '&cUsage: /email recovery <Email>'
+  email_sent: '&2Recovery email sent successfully! Please check your email inbox!'
+  forgot_password_hint: '&3Forgot your password? Please use the command: /email recovery
+    <yourEmail>'
+registration:
+  command_usage: '&8[§bTEENFOUNDERS&8] &cUsage: /register <password> <confirmPassword>'
+  disabled: '&cIn-game registration is disabled!'
+  kicked_admin_registered: An admin just registered you; please log in again.
+  name_taken: '&8[§bTEENFOUNDERS&8] &cThis username is already registered! Please
+    log in.'
+  reg_only: '&4Only registered users can join the server! Please visit http://example.com
+    to register yourself!'
+  register_request: '&8&m----------------------------------------------------%nl%&b&l                  ▲%nl%&b&l                 ▲
+    ▲%nl%&b&l                ▲   ▲%nl%&f&l               ▲  ▲  ▲%nl%&b&l              ▲▲▲
+    ▲ ▲▲▲%nl%&b&l            TEENFOUNDERS%nl%&7              Build  •  Learn  •  Launch%nl%&8&m----------------------------------------------------%nl%&f  Welcome
+    to &bTeenFounders Network&f!%nl%&7  Please create your account to begin:%nl%&8  »
+    &b/register <password> <confirmPassword>%nl%&8&m----------------------------------------------------'
+  success: '&8[§bTEENFOUNDERS&8] &aAccount created successfully! Welcome to the network.'
+session:
+  invalid_session: '&cYour IP has been changed and your session data has expired!'
+  valid_session: '&2Logged-in due to Session Reconnection.'
+time:
+  day: day
+  days: days
+  hour: hour
+  hours: hours
+  minute: minute
+  minutes: minutes
+  second: second
+  seconds: seconds
+two_factor:
+  already_enabled: Two-factor authentication is already enabled for your account!
+  code_created: '&2Your secret code is %code. You can scan it from here %url'
+  code_required: Please submit your two-factor authentication code with /2fa code
+    <code>
+  confirmation_required: Please confirm your code with /2fa confirm <code>
+  enable_error_no_code: No 2fa key has been generated for you or it has expired. Please
+    run /2fa add
+  enable_error_wrong_code: Wrong code or code has expired. Please run /2fa add
+  enable_success: Successfully enabled two-factor authentication for your account
+  invalid_code: Invalid code!
+  not_enabled_error: Two-factor authentication is not enabled for your account. Run
+    /2fa add
+  removed_success: Successfully removed two-factor auth from your account
+unregister:
+  command_usage: '&cUsage: /unregister <password>'
+  success: '&cSuccessfully unregistered!'
+verification:
+  already_verified: '&2You can already execute every sensitive command within the
+    current session!'
+  code_expired: '&3Your code has expired! Execute another sensitive command to get
+    a new code!'
+  code_required: '&3This command is sensitive and requires an email verification!
+    Check your inbox and follow the email''s instructions.'
+  command_usage: '&cUsage: /verification <code>'
+  email_needed: '&3To verify your identity you need to link an email address with
+    your account!!'
+  incorrect_code: '&cIncorrect code, please type "/verification <code>" into the chat,
+    using the code you received by email'
+  success: '&2Your identity has been verified! You can now execute all commands within
+    the current session!'

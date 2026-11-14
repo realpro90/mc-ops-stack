@@ -1,0 +1,165 @@
+items:
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 28
+    - 30
+    - 32
+    - 34
+  brand:
+    display_name: '&#00d9ff&l✦ TEENFOUNDERS NETWORK ✦'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+    - '&#00d9ff&m---------------------------------'
+    - '  &fBuild  •  Learn  •  Launch'
+    - ''
+    - '  &7Official Network Destination Hub'
+    - '  &7Click any server below to connect.'
+    - ''
+    - '  &8» &#00d9ff&nhttps://teenfounders.in'
+    - '&#00d9ff&m---------------------------------'
+    material: NETHER_STAR
+    slot: 4
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 35
+  cosmetics_button:
+    display_name: '&e&l✨ COSMETICS WARDROBE'
+    left_click_commands:
+    - '[openguimenu] cosmetics'
+    lore:
+    - '&7Founder hats, particle effects,'
+    - '&7and wardrobe customization.'
+    - ''
+    - '&e▶ Click to browse'
+    material: FEATHER
+    slot: 31
+  creative:
+    display_name: '&d&l⚒ CREATIVE LAB ⚒'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    left_click_commands:
+    - '[connect] creative'
+    lore:
+    - '&8&m-------------------------------'
+    - '&7Architects & Builders Sandbox'
+    - ''
+    - '&8» &7Status: &aOnline'
+    - '&8» &7Tools: &#00d9ffFAWE &8• &#00d9ffAxiom'
+    - '&8» &7Flight: &aEnabled'
+    - ''
+    - '&7Design prototypes, build megastructures,'
+    - '&7and visualize concepts without limits.'
+    - '&8&m-------------------------------'
+    - '&d▶ Click to Connect to Creative'
+    material: DIAMOND_PICKAXE
+    slot: 15
+  info_button:
+    display_name: '&#00d9ff&l📖 COMMUNITY & INFO'
+    left_click_commands:
+    - '[openguimenu] info'
+    lore:
+    - '&7About TeenFounders, rules,'
+    - '&7social links & documentation.'
+    - ''
+    - '&#00d9ff▶ Click for network info'
+    material: BOOK
+    slot: 33
+  lobby:
+    display_name: '&#00d9ff&l✦ LOBBY HUB ✦'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    left_click_commands:
+    - '[connect] lobby'
+    lore:
+    - '&8&m-------------------------------'
+    - '&7Central Network Meeting Point'
+    - ''
+    - '&8» &7Status: &aOnline'
+    - '&8» &7Server: &fLobby'
+    - '&8» &7Players: &#00d9ff%server_online%'
+    - ''
+    - '&7Explore network portals, meet fellow'
+    - '&7founders and check leaderboard.'
+    - '&8&m-------------------------------'
+    - '&#00d9ff▶ Click to Warp to Lobby'
+    material: COMPASS
+    slot: 11
+  profile_button:
+    display_name: '&#00d9ff&l👤 YOUR PROFILE'
+    left_click_commands:
+    - '[openguimenu] profile'
+    lore:
+    - '&7View your player statistics,'
+    - '&7rank, and network progress.'
+    - ''
+    - '&#00d9ff▶ Click to view profile'
+    material: PLAYER_HEAD
+    slot: 29
+  survival:
+    display_name: '&a&l⚔ SURVIVAL SMP ⚔'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    left_click_commands:
+    - '[connect] survival'
+    lore:
+    - '&8&m-------------------------------'
+    - '&7Vanilla Community SMP & Economy'
+    - ''
+    - '&8» &7Status: &aOnline'
+    - '&8» &7Voice Chat: &aPort 24454 (UDP)'
+    - '&8» &7PvP / Claims / Economy'
+    - ''
+    - '&7Build your base, trade with founders,'
+    - '&7and survive together in proximity audio.'
+    - '&8&m-------------------------------'
+    - '&a▶ Click to Connect to Survival'
+    material: GRASS_BLOCK
+    slot: 13
+  pvp_arena:
+    display_name: '&#00d9ff&l⚔ PVP COMBAT ARENA ⚔'
+    material: NETHERITE_SWORD
+    slot: 22
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Gladiatorial combat zone at Survival spawn'
+    - '&7Features 4 custom kits (/kits):'
+    - '  &8• &bWarrior &8| &bArcher &8| &bTank &8| &bScout'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to enter Arena'
+    left_click_commands:
+    - '[connect] survival'
+    - '[player] warp arena'
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fSERVERS'
+open_command:
+- servers
+- servermenu
+- hub
+- menu
+register_command: true
+size: 36

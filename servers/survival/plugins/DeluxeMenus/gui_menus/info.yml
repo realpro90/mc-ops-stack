@@ -1,0 +1,89 @@
+items:
+  back:
+    display_name: '&#00d9ff&l« BACK'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Return to server selector'
+    material: ARROW
+    slot: 21
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 23
+    - 24
+    - 25
+  brand:
+    display_name: '&#00d9ff&l✦ TEENFOUNDERS NETWORK ✦'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    lore:
+    - '&7Build in public • Learn in public'
+    - ''
+    - '&fEmpowering young builders & founders.'
+    material: NETHER_STAR
+    slot: 4
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 26
+  community:
+    display_name: '&#00d9ff&lCOMMUNITY'
+    left_click_commands:
+    - '[message] &8[&#00d9ffTEENFOUNDERS&8] &7Visit &#00d9ffhttps://teenfounders.in
+      &7to connect!'
+    - '[close]'
+    lore:
+    - '&7Connect with entrepreneurs and creators.'
+    - ''
+    - '&#00d9ff▶ Click to view in chat'
+    material: HEART_OF_THE_SEA
+    slot: 15
+  rules:
+    display_name: '&e&lNETWORK GUIDELINES'
+    lore:
+    - '&71. Respect all players.'
+    - '&72. No griefing or cheating.'
+    - '&73. Voice Chat: Friendly communication.'
+    - '&74. Build something awesome!'
+    material: WRITABLE_BOOK
+    slot: 13
+  website:
+    display_name: '&#00d9ff&lOFFICIAL WEBSITE'
+    left_click_commands:
+    - '[message] &8[&#00d9ffTEENFOUNDERS&8] &7Website: &#00d9ff&nhttps://teenfounders.in'
+    - '[close]'
+    lore:
+    - '&7Visit our platform:'
+    - '&#00d9ffhttps://teenfounders.in'
+    - ''
+    - '&#00d9ff▶ Click to receive link in chat'
+    material: BEACON
+    slot: 11
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fINFO'
+open_command:
+- info
+- links
+- about
+register_command: true
+size: 27

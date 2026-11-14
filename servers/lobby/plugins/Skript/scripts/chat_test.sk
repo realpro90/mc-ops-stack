@@ -1,0 +1,3 @@
+command /testchatprefix:
+    trigger:
+        broadcast "Player prefix: '%player's prefix%' | Display name: '%player's display name%'"

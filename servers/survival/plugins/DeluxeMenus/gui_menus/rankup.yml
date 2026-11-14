@@ -1,0 +1,114 @@
+menu_title: '<#00d9ff>&lTEENFOUNDERS &8| &e&lRANKUP PATHWAY'
+open_command:
+- rankup
+- ranks
+register_command: true
+size: 36
+items:
+  border:
+    display_name: '&8✦'
+    material: GRAY_STAINED_GLASS_PANE
+    slots: [0, 1, 2, 3, 5, 6, 7, 8, 9, 17, 18, 26, 27, 28, 30, 32, 34]
+  header:
+    display_name: '<#00d9ff>&l✦ NETWORK RANK PROGRESSION ✦'
+    material: NETHER_STAR
+    slot: 4
+    lore:
+    - '<#00d9ff>&m---------------------------------'
+    - '  &fProgress through tiers by earning in-game'
+    - '  &fcurrency in Survival (/economy) or achievements.'
+    - ''
+    - '  &7Current Balance: &a$%vault_eco_balance_formatted%'
+    - '<#00d9ff>&m---------------------------------'
+  rank_player:
+    display_name: '&b&l[PLAYER] &f- Default Rank'
+    material: IRON_CHESTPLATE
+    slot: 11
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Status: &a&lCURRENT / UNLOCKED'
+    - ''
+    - '&7Perks:'
+    - '  &8• &f1x Home (/sethome)'
+    - '  &8• &fAccess to Survival, Lobby & Creative'
+    - '  &8• &fBasic Starter Kit'
+    - '&8&m---------------------------------'
+  rank_vip:
+    display_name: '&6&l[VIP] &f- Tier I Rank'
+    material: GOLDEN_CHESTPLATE
+    slot: 13
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Requirement: &6$10,000 &7in-game coins'
+    - ''
+    - '&7Perks:'
+    - '  &8• &63x Homes &7(/sethome)'
+    - '  &8• &6/ptime &7(Personal time control)'
+    - '  &8• &6VIP PvP Kit &7access in /pvp'
+    - '  &8• &6Gold [VIP] &7name badge in chat & TAB'
+    - ''
+    - '&e▶ Click to Rank Up ($10,000)'
+    - '&8&m---------------------------------'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '10000'
+      deny_commands:
+      - '[message] &8[<#00d9ff>TEENFOUNDERS&8] &cYou need $10,000 in-game balance to rank up to VIP! (Current: $%vault_eco_balance_formatted%)'
+    left_click_commands:
+    - '[console] eco take %player_name% 10000'
+    - '[console] lp user %player_name% parent add vip'
+    - '[broadcast] &8[<#00d9ff>TEENFOUNDERS&8] &a✦ Congratulations &f%player_name% &afor ranking up to &6&l[VIP]&a!'
+    - '[close]'
+  rank_founder:
+    display_name: '<#00d9ff>&l[FOUNDER] &f- Tier II Rank'
+    material: DIAMOND_CHESTPLATE
+    slot: 15
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Requirement: <#00d9ff>$50,000 &7in-game coins'
+    - ''
+    - '&7Perks:'
+    - '  &8• <#00d9ff>5x Homes &7(/sethome)'
+    - '  &8• <#00d9ff>Priority Queue &7access'
+    - '  &8• <#00d9ff>Keep EXP &7upon death in Survival'
+    - '  &8• <#00d9ff>Electric Cyan [FOUNDER] &7badge'
+    - ''
+    - '<#00d9ff>▶ Click to Rank Up ($50,000)'
+    - '&8&m---------------------------------'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '50000'
+      deny_commands:
+      - '[message] &8[<#00d9ff>TEENFOUNDERS&8] &cYou need $50,000 in-game balance to rank up to Founder! (Current: $%vault_eco_balance_formatted%)'
+    left_click_commands:
+    - '[console] eco take %player_name% 50000'
+    - '[console] lp user %player_name% parent add founder'
+    - '[broadcast] &8[<#00d9ff>TEENFOUNDERS&8] &b&l✦ Network Announcement: &f%player_name% &bhas achieved the prestigious &b&l[FOUNDER]&b rank!'
+    - '[close]'
+  staff_info:
+    display_name: '&c&lSTAFF APPLICATION'
+    material: BOOK
+    slot: 22
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Want to become a Moderator or Helper?'
+    - '  &8• &fActive community presence'
+    - '  &8• &fHelpful in survival & lobby'
+    - ''
+    - '  &8» <#00d9ff>https://teenfounders.in'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[message] &8[<#00d9ff>TEENFOUNDERS&8] &fApply for staff at: &bhttps://teenfounders.in'
+    - '[close]'
+  close:
+    display_name: '&c&l✕ CLOSE'
+    material: BARRIER
+    slot: 31
+    left_click_commands:
+    - '[close]'

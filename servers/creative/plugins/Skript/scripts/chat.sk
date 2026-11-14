@@ -1,0 +1,78 @@
+# TeenFounders Network Chat Formatter & Multilingual Anti-Swear System
+on chat:
+    set {_clean} to message
+    
+    # Strip common bypass symbols & spaces for normalized detection
+    replace all "@" with "a" in {_clean}
+    replace all "$" with "s" in {_clean}
+    replace all "0" with "o" in {_clean}
+    replace all "1" with "i" in {_clean}
+    replace all "!" with "i" in {_clean}
+    replace all "3" with "e" in {_clean}
+    replace all "_" with "" in {_clean}
+    replace all "." with "" in {_clean}
+    replace all "-" with "" in {_clean}
+    replace all "*" with "" in {_clean}
+
+    # Multilingual Swear Detection (English, Hindi/Hinglish, Spanish, French, German, Russian)
+    # English
+    if {_clean} contains "fuck" or "bitch" or "shit" or "asshole" or "cunt" or "nigger" or "nigga" or "faggot" or "whore" or "slut" or "pussy" or "dick" or "cock" or "bastard" or "motherfucker" or "stfu":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # Hindi / Hinglish
+    if {_clean} contains "bhenchod" or "madarchod" or "chutiya" or "chutiye" or "lund" or "bhosdike" or "bsdk" or "randi" or "harami" or "gandu" or "gaand" or "kuttiya" or "suar" or "behenchod" or "bhosdi" or "lauda" or "lavda" or "saale" or "kamina":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # Spanish
+    if {_clean} contains "mierda" or "puta" or "puto" or "pendejo" or "cabron" or "maricon" or "coño" or "hijo de puta" or "culiao" or "gilipollas" or "verga" or "chupala":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # French
+    if {_clean} contains "merde" or "putain" or "salope" or "connard" or "encule" or "batard" or "fils de pute" or "nique":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # German
+    if {_clean} contains "scheisse" or "scheiße" or "arschloch" or "hurensohn" or "wichser" or "fotze" or "schlampe":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # Russian / Slang
+    if {_clean} contains "blyat" or "suka" or "nahui" or "pizdec" or "ebat" or "хуй" or "блядь" or "сука" or "пиздец" or "ебать":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # Exact short words like "mc" or "bc" or "ass"
+    if message is "mc" or "bc" or "ass" or "fk" or "stfu":
+        cancel event
+        send "&8[<#00d9ff>TEENFOUNDERS&8] &cPlease keep the chat clean and respectful! Swearing is not permitted." to player
+        send "&8[<#00d9ff>SECURITY&8] &cBlocked swear word from %player%: %message%" to console
+        stop
+
+    # If clean, format and broadcast
+    cancel event
+    set {_p} to player's prefix
+    if {_p} is not set:
+        set {_p} to ""
+    if {_p} is "":
+        if player is op:
+            set {_p} to "&4&l[OWNER] &c"
+        else:
+            set {_p} to "&b&l[PLAYER] &f"
+    broadcast "%{_p}%%player%&8 » &f%message%"
+

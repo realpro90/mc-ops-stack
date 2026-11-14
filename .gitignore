@@ -15,3 +15,22 @@ servers/*/plugins/
 
 # --- backup archives written by the mc-backup sidecars ---
 /backups/
+
+# TeenFounders custom ignores
+*.py
+*.backup*
+*.before-*
+*.tmp.jar
+*.mv.db
+*.db
+.env*
+.npc-*
+.tf-*
+.*-build/
+gradle-*/
+plugin-downloads/
+proxy/plugins/*.jar
+servers/*/plugins/**/*.jar
+servers/*/plugins/**/libs/
+servers/*/plugins/**/cache/
+servers/*/plugins/**/logs/

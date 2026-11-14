@@ -1,0 +1,82 @@
+items:
+  back:
+    display_name: '&#00d9ff&l« BACK TO SERVERS'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Return to server selector'
+    material: ARROW
+    slot: 31
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 28
+    - 30
+    - 32
+    - 34
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 35
+  network_info:
+    display_name: '&#00d9ff&lNETWORK STATUS'
+    lore:
+    - '&7Network Status: &aOnline'
+    - '&7Proxy: &fVelocity 3.5.0'
+    - '&7Authentication: &aVerified'
+    material: EMERALD
+    slot: 11
+  player_card:
+    display_name: '&#00d9ff&l%player_name%'
+    lore:
+    - '&8&m-------------------------'
+    - '&7Network Rank: %luckperms_prefix%'
+    - '&7Ping: &a%player_ping%ms'
+    - '&8&m-------------------------'
+    - ''
+    - '&7Playtime: &f%statistic_time_played%'
+    - '&7Kills: &e%statistic_player_kills%'
+    - '&7Deaths: &c%statistic_deaths%'
+    - ''
+    material: PLAYER_HEAD
+    slot: 13
+  ranks_overview:
+    display_name: '&e&lRANKS & TIERS'
+    lore:
+    - '&7Available Ranks:'
+    - '  &4[OWNER]'
+    - '  &c[ADMIN]'
+    - '  &2[MOD]'
+    - '  &6[VIP]'
+    - '  &7[PLAYER]'
+    - ''
+    - '&7Your Rank: %luckperms_prefix%'
+    material: GOLD_INGOT
+    slot: 15
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fPROFILE'
+open_command:
+- profile
+- myprofile
+- stats
+register_command: true
+size: 36

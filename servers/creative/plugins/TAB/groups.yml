@@ -1,0 +1,19 @@
+owner:
+  tabprefix: '&4&l[OWNER] &c'
+  tagprefix: '&4&l[OWNER] &c'
+admin:
+  tabprefix: '&c&l[ADMIN] &c'
+  tagprefix: '&c&l[ADMIN] &c'
+mod:
+  tabprefix: '&2&l[MOD] &a'
+  tagprefix: '&2&l[MOD] &a'
+vip:
+  tabprefix: '&6&l[VIP] &e'
+  tagprefix: '&6&l[VIP] &e'
+player:
+  tabprefix: '&b[PLAYER] &f'
+  tagprefix: '&b[PLAYER] &f'
+_DEFAULT_:
+  tabprefix: '&b[PLAYER] &f'
+  tagprefix: '&b[PLAYER] &f'
+

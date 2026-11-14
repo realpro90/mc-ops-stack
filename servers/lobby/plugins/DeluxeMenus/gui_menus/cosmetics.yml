@@ -1,0 +1,74 @@
+items:
+  back:
+    display_name: '&#00d9ff&l« BACK'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Return to server selector'
+    material: ARROW
+    slot: 21
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 23
+    - 24
+    - 25
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 26
+  glow:
+    display_name: '&#00d9ff&lNEON GLOW AURAS'
+    lore:
+    - '&7Electric cyan and blue neon glow.'
+    - '&7Rank: &6VIP+'
+    material: GLOWSTONE_DUST
+    slot: 13
+  hats:
+    display_name: '&e&lFOUNDER HATS'
+    left_click_commands:
+    - '[player] hat'
+    lore:
+    - '&7Wear cosmetic custom blocks.'
+    - '&7Use command: /hat'
+    material: GOLDEN_HELMET
+    slot: 11
+  header:
+    display_name: '&e&lCOSMETICS WARDROBE'
+    lore:
+    - '&7Founder hats, particle effects, and styles.'
+    - '&7Supporter & VIP tiers unlock special vanity.'
+    material: NETHER_STAR
+    slot: 4
+  suit:
+    display_name: '&#00d9ff&lFOUNDER SUIT'
+    lore:
+    - '&7Signature vanity gear styled for founders.'
+    - '&7Unlocked via network supporter rank.'
+    material: DIAMOND_CHESTPLATE
+    slot: 15
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fCOSMETICS'
+open_command:
+- cosmetics
+- wardrobe
+register_command: true
+size: 27

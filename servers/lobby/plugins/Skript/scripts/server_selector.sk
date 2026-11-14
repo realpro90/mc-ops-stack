@@ -1,0 +1,55 @@
+on join:
+    wait 5 ticks
+    set slot 0 of player to compass named "§8✦ §x§0§0§d§9§f§f§lSERVER SELECTOR §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Fast travel across TeenFounders:" and "  §8• §x§0§0§d§9§f§f§lLobby §8- §7Network Hub" and "  §8• §a§lSurvival §8- §7SMP §8& Voice" and "  §8• §d§lCreative §8- §7FAWE §8& Axiom" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to open menu"
+    add hide attributes to item flags of slot 0 of player
+    set slot 4 of player to nether star named "§8✦ §x§0§0§d§9§f§f§lTEENFOUNDERS §8✦ §fNETWORK" with lore "§8§m--------------------------------" and "  §fBuild in public • Learn in public" and "  §7The community for young founders." and "§8§m--------------------------------" and "  §8» §x§0§0§d§9§f§f§nhttps://teenfounders.in" and "§x§0§0§d§9§f§f▶ Right-Click for info §8& links"
+    add hide attributes to item flags of slot 4 of player
+    set slot 8 of player to player head named "§8✦ §x§0§0§d§9§f§f§lMY PROFILE §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Check your rank, stats §8& progress" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to view stats"
+    add hide attributes to item flags of slot 8 of player
+
+on respawn:
+    wait 5 ticks
+    set slot 0 of player to compass named "§8✦ §x§0§0§d§9§f§f§lSERVER SELECTOR §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Fast travel across TeenFounders:" and "  §8• §x§0§0§d§9§f§f§lLobby §8- §7Network Hub" and "  §8• §a§lSurvival §8- §7SMP §8& Voice" and "  §8• §d§lCreative §8- §7FAWE §8& Axiom" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to open menu"
+    add hide attributes to item flags of slot 0 of player
+    set slot 4 of player to nether star named "§8✦ §x§0§0§d§9§f§f§lTEENFOUNDERS §8✦ §fNETWORK" with lore "§8§m--------------------------------" and "  §fBuild in public • Learn in public" and "  §7The community for young founders." and "§8§m--------------------------------" and "  §8» §x§0§0§d§9§f§f§nhttps://teenfounders.in" and "§x§0§0§d§9§f§f▶ Right-Click for info §8& links"
+    add hide attributes to item flags of slot 4 of player
+    set slot 8 of player to player head named "§8✦ §x§0§0§d§9§f§f§lMY PROFILE §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Check your rank, stats §8& progress" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to view stats"
+    add hide attributes to item flags of slot 8 of player
+
+on right click with compass:
+    if name of player's tool contains "SERVER SELECTOR":
+        cancel event
+        execute console command "dm open servers %player%"
+
+on right click with nether star:
+    if name of player's tool contains "TEENFOUNDERS":
+        cancel event
+        execute console command "dm open teenfounders %player%"
+
+on right click with player head:
+    if name of player's tool contains "MY PROFILE":
+        cancel event
+        execute console command "dm open profile %player%"
+
+on drop of compass:
+    if name of event-item contains "SERVER SELECTOR":
+        cancel event
+
+on drop of nether star:
+    if name of event-item contains "TEENFOUNDERS":
+        cancel event
+
+on drop of player head:
+    if name of event-item contains "MY PROFILE":
+        cancel event
+
+on inventory click:
+    if name of event-item contains "SERVER SELECTOR" or "TEENFOUNDERS" or "MY PROFILE":
+        cancel event
+
+on swap hand items:
+    if name of player's tool contains "SERVER SELECTOR" or "TEENFOUNDERS" or "MY PROFILE":
+        cancel event
+
+on damage of player:
+    cancel event

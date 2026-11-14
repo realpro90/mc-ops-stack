@@ -1,0 +1,31 @@
+# §x§0§0§d§9§f§f = #00d9ff cyan in legacy Minecraft hex format
+# Used because vanilla Skript doesn't parse MiniMessage <#RRGGBB> in item names/lore
+
+on join:
+    wait 5 ticks
+    set slot 0 of player to diamond pickaxe named "§8✦ §x§0§0§d§9§f§f§lBUILDER MENU §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Fast access to builder shortcuts:" and "  §8• §x§0§0§d§9§f§f//wand §7- Selection tool" and "  §8• §e/ptime day §7- Personal daytime" and "  §8• §c/ci §7- Clear inventory" and "  §8• §x§0§0§d§9§f§fAxiom §7- Studio tools" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to open menu"
+    add hide attributes to item flags of slot 0 of player
+    set slot 8 of player to compass named "§8✦ §x§0§0§d§9§f§f§lSERVER SELECTOR §8(Right-Click)" with lore "§8§m--------------------------------" and "§7Warp to other network servers:" and "  §8• §x§0§0§d§9§f§f§lLobby" and "  §8• §a§lSurvival" and "§8§m--------------------------------" and "§x§0§0§d§9§f§f▶ Right-Click to switch server"
+    add hide attributes to item flags of slot 8 of player
+
+on right click with diamond pickaxe:
+    if name of player's tool contains "BUILDER MENU":
+        cancel event
+        execute console command "dm open creative_menu %player%"
+
+on right click with compass:
+    if name of player's tool contains "SERVER SELECTOR":
+        cancel event
+        execute console command "dm open servers %player%"
+
+on drop:
+    if name of event-item contains "BUILDER MENU" or "SERVER SELECTOR":
+        cancel event
+
+on inventory click:
+    if name of event-item contains "BUILDER MENU" or "SERVER SELECTOR":
+        cancel event
+
+on swap hand items:
+    if name of player's tool contains "BUILDER MENU" or "SERVER SELECTOR":
+        cancel event

@@ -39,6 +39,10 @@ x-paper-env: &paper-env
 
   # The proxy handles auth, so backends MUST be offline-mode.
   ONLINE_MODE: "FALSE"
+  RESOURCE_PACK: "http://15.220.141.113/teenfounders-resource-pack.zip"
+  RESOURCE_PACK_SHA1: "1e5a28e43df5636d3ffb233baedbc94951c76ddd"
+  RESOURCE_PACK_ENFORCE: "true"
+  RESOURCE_PACK_PROMPT: "{\"text\":\"Please accept the TeenFounders UI/UX Resource Pack to join the network.\",\"color\":\"aqua\"}"
 
   # itzg reads CFG_FORWARDING_SECRET_FILE into CFG_FORWARDING_SECRET and expands
   # ${CFG_FORWARDING_SECRET} while syncing paper-global.yml from /config into
@@ -65,7 +69,7 @@ x-paper-common: &paper-common
   # Minecraft 26.1+ requires Java 25; drop to a `*-java21` tag only when
   # pinning 1.21.x. Pinned to the latest verified stable release (2026-07-04);
   # Dependabot (.github/dependabot.yml) opens a PR when itzg cuts a new one.
-  image: itzg/minecraft-server:2026.7.0-java25
+  image: itzg/minecraft-server:2026.7.0-java21
   restart: unless-stopped
   # Compose kills after 10s by default; Paper needs time to flush world
   # saves on shutdown or worlds can corrupt.
@@ -100,7 +104,6 @@ x-backup-common: &backup-common
   logging: *logging
 
 services:
-  # ── Velocity proxy: the only thing exposed to players ─────────────────────
   proxy:
     # Latest verified versioned release (itzg cuts these less often than
     # Velocity itself; see .github/dependabot.yml for future bumps).
@@ -132,14 +135,18 @@ services:
       # behind and Velocity refuses to load a duplicate plugin ID. Safe here
       # since nothing is ever manually dropped into the proxy's plugins dir
       # (unlike the backends' bind-mounted ./servers/<name>/plugins).
-      REMOVE_OLD_PLUGINS: "TRUE"
+      REMOVE_OLD_PLUGINS: "FALSE"
 
       # itzg copies /config/velocity.toml into /server and expands ${CFG_*}
       # there; velocity.toml references ${CFG_MOTD}. The CFG_ prefix is mandatory.
       REPLACE_ENV_VARIABLES: "TRUE"
-      CFG_MOTD: "${PROXY_MOTD:-A Minecraft Server}"
+      CFG_MOTD: "<aqua><bold>TEENFOUNDERS NETWORK</bold></aqua> <gray>|</gray> <white>Build - Learn - Launch</white> <gray>|</gray> <aqua>https://teenfounders.in</aqua>"
     volumes:
+
       - ./proxy/velocity.toml:/config/velocity.toml:ro
+
+      - ./proxy/plugins:/server/plugins
+
       - proxy_data:/server
     secrets: [forwarding_secret]
     depends_on: [lobby, survival, creative]
@@ -151,7 +158,7 @@ services:
     environment:
       <<: [*paper-env, *flat-world]
       MEMORY: "2G"
-      MOTD: "Lobby"
+      MOTD: "§b§lTEENFOUNDERS NETWORK §7| §fhttps://teenfounders.in"
       DIFFICULTY: "peaceful"
       MODE: "adventure"
       GENERATE_STRUCTURES: "false"
@@ -168,10 +175,12 @@ services:
 
   survival:
     <<: *paper-common
+    ports:
+      - "24454:24454/udp" # Simple Voice Chat
     environment:
       <<: *paper-env
-      MEMORY: "4G"
-      MOTD: "Survival"
+      MEMORY: "2G"
+      MOTD: "§b§lTEENFOUNDERS SURVIVAL §7| §fhttps://teenfounders.in"
       DIFFICULTY: "normal"
       # Plugins on this backend only — Modrinth slugs; notes live in .env.example.
       MODRINTH_PROJECTS: "${SURVIVAL_MODRINTH_PROJECTS:-}"
@@ -184,8 +193,8 @@ services:
     <<: *paper-common
     environment:
       <<: [*paper-env, *flat-world]
-      MEMORY: "4G"
-      MOTD: "Creative"
+      MEMORY: "2G"
+      MOTD: "§b§lTEENFOUNDERS CREATIVE §7| §fhttps://teenfounders.in"
       MODE: "creative"
       # Superflat like the lobby; pin the spawn to the surface at 0,0,0 (.env).
       RCON_CMDS_STARTUP: "${CREATIVE_RCON_CMDS_STARTUP:-}"
@@ -242,6 +251,6 @@ volumes:
 
 secrets:
   forwarding_secret:
-    file: ./secrets/forwarding.secret # gitignored; created by `make secret`
+    file: ./secrets/forwarding.secret
   rcon_password:
-    file: ./secrets/rcon.secret # gitignored; created by `make secret`
+    file: ./secrets/rcon.secret

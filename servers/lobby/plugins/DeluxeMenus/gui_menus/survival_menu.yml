@@ -1,0 +1,143 @@
+items:
+  arena:
+    display_name: '&#00d9ff&l⚔ PVP COMBAT ARENA ⚔'
+    left_click_commands:
+    - '[player] warp arena'
+    - '[close]'
+    lore:
+    - '&7Warp directly to the gladiator arena.'
+    - '&7Fight players, test combat builds, and battle!'
+    - ''
+    - '&#00d9ff▶ Click to Warp to Arena (/warp arena)'
+    material: NETHERITE_SWORD
+    slot: 19
+  back:
+    display_name: '&#00d9ff&l« ALL SERVERS'
+    left_click_commands:
+    - '[openguimenu] servers'
+    lore:
+    - '&7Open full server selector'
+    material: ARROW
+    slot: 31
+  border:
+    display_name: '&8✦'
+    lore: []
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 28
+    - 30
+    - 32
+    - 34
+  close:
+    display_name: '&c&l✕ CLOSE'
+    left_click_commands:
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 35
+  header:
+    display_name: '&a&lSURVIVAL SMP CONTROLS'
+    lore:
+    - '&7Quick actions & shortcuts for Survival SMP.'
+    material: GRASS_BLOCK
+    slot: 4
+  home:
+    display_name: '&e&lHOME'
+    left_click_commands:
+    - '[player] home'
+    - '[close]'
+    lore:
+    - '&e▶ Left-Click: Teleport to /home'
+    - '&6▶ Right-Click: Set home /sethome'
+    material: RED_BED
+    right_click_commands:
+    - '[player] sethome'
+    - '[close]'
+    slot: 13
+  lobby_switch:
+    display_name: '&#00d9ff&lRETURN TO LOBBY'
+    left_click_commands:
+    - '[connect] lobby'
+    lore:
+    - '&#00d9ff▶ Click to connect'
+    material: BEACON
+    slot: 23
+  spawn:
+    display_name: '&a&lRETURN TO SPAWN'
+    left_click_commands:
+    - '[player] spawn'
+    - '[close]'
+    lore:
+    - '&a▶ Click to teleport (/spawn)'
+    material: ENDER_PEARL
+    slot: 11
+  tpa:
+    display_name: '&#00d9ff&lTELEPORT REQUESTS'
+    lore:
+    - '&7/tpa <player> - Request teleport'
+    - '&7/tpaccept - Accept request'
+    material: COMPASS
+    slot: 15
+  voice:
+    display_name: '&a&lSIMPLE VOICE CHAT'
+    lore:
+    - '&7Proximity audio active on port 24454 (UDP).'
+    - '&7Default Key: &fV &7or &fCAPS LOCK'
+    material: JUKEBOX
+    slot: 21
+  kits:
+    display_name: '&#00d9ff&l🛡 PVP KITS & LOADOUTS'
+    material: SHIELD
+    slot: 25
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Select from 4 custom combat kits:'
+    - '  &8• &bWarrior &8| &bArcher &8| &bTank &8| &bScout'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to select a Kit (/kits)'
+    left_click_commands:
+    - '[openguimenu] pvp_kits'
+  info_btn:
+    display_name: '&#00d9ff&l📖 SERVER INFO & RULES'
+    material: BOOK
+    slot: 20
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Network guidelines, rules & website.'
+    - '&8&m---------------------------------'
+    - '&#00d9ff▶ Click to open Server Info (/info)'
+    left_click_commands:
+    - '[openguimenu] info'
+  rankup:
+    display_name: '&#00d9ff&l★ RANKUP PATHWAY'
+    material: EXPERIENCE_BOTTLE
+    slot: 22
+    lore:
+    - '&8&m---------------------------------'
+    - '&7View rank ladder and rank up:'
+    - '  &8• &f[PLAYER] &8» &6[VIP] &8» &#00d9ff[FOUNDER]'
+    - ''
+    - '&#00d9ff▶ Click to open Rankup Menu (/rankup)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[openguimenu] rankup'
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &a&lSURVIVAL'
+open_command:
+- survivalmenu
+- smp
+register_command: true
+size: 36

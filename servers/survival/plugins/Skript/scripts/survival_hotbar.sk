@@ -1,0 +1,39 @@
+function giveSurvivalHotbar(p: player):
+    set {_menu} to compass named "§x§0§0§d§9§f§f§lSURVIVAL MENU §8(Right-Click)" with lore "§7Quick actions §8& server navigation:" and "  §a• /spawn §7- Spawn hub" and "  §e• /home §7- Teleport home" and "  §b• /servers §7- Switch server" and "" and "§x§0§0§d§9§f§f▶ Right-Click to open menu"
+    add hide attributes to item flags of {_menu}
+    set slot 8 of {_p} to {_menu}
+
+on join:
+    wait 5 ticks
+    giveSurvivalHotbar(player)
+
+on respawn:
+    wait 5 ticks
+    giveSurvivalHotbar(player)
+
+on death of player:
+    loop drops:
+        if name of loop-item contains "SURVIVAL MENU":
+            remove loop-item from drops
+
+command /hotbar:
+    trigger:
+        giveSurvivalHotbar(player)
+        message "§8[§x§0§0§d§9§f§fTEENFOUNDERS§8] §aSurvival menu item added to slot 8!"
+
+on right click with compass:
+    if name of player's tool contains "SURVIVAL MENU":
+        cancel event
+        execute console command "dm open survival_menu %player%"
+
+on drop:
+    if name of event-item contains "SURVIVAL MENU":
+        cancel event
+
+on inventory click:
+    if name of event-item contains "SURVIVAL MENU":
+        cancel event
+
+on swap hand items:
+    if name of player's tool contains "SURVIVAL MENU":
+        cancel event

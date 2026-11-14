@@ -1,0 +1,88 @@
+assign-groups-by-permissions: false
+belowname-objective:
+  enabled: false
+  fancy-value: '&c%health%'
+  fancy-value-default: NPC
+  view-distance: 10
+bossbar:
+  enabled: false
+compensate-for-packetevents-bug: false
+components:
+  disable-shadow-for-heads: true
+  minimessage-support: true
+config-version: 7
+debug: false
+global-playerlist:
+  enabled: false
+  update-latency: false
+header-footer:
+  designs:
+    default:
+      display-condition: '%world%!=disabledworld'
+      footer:
+      - ''
+      - '§7Server §8» <#00D9FF>Lobby §8| §7Online §8» §f%server_online%'
+      - '§7Ping §8» §a%player_ping%ms'
+      - '<#00D9FF>https://teenfounders.in'
+      - ''
+      header:
+      - ''
+      - <#00D9FF>&lTEENFOUNDERS NETWORK
+      - '§7Build §8• §7Learn §8• §7Launch'
+      - ''
+  enabled: true
+layout:
+  enabled: false
+mysql:
+  enabled: false
+per-world-playerlist:
+  enabled: false
+permission-refresh-interval: 1000
+ping-spoof:
+  enabled: false
+placeholders:
+  locale: en-US
+  register-tab-expansion: false
+playerlist-objective:
+  enabled: false
+  render-type: INTEGER
+  title: TAB
+  value: '%ping%'
+prevent-spectator-effect:
+  enabled: false
+primary-group-finding-list:
+- owner
+- admin
+- mod
+- founder
+- vip
+- player
+proxy-support:
+  channel-name-suffix: custom
+  enabled: true
+scoreboard:
+  delay-on-join-milliseconds: 0
+  enabled: true
+  hidden-by-default: false
+  remember-toggle-choice: false
+  scoreboards:
+    lobby:
+      lines:
+      - '§8§m-------------------'
+      - '§7Player §8» §f%player%'
+      - '§7Rank §8» %luckperms_prefix%'
+      - ''
+      - '§7Server §8» <#00D9FF>Lobby'
+      - '§7Online §8» §f%server_online% §7online'
+      - '§7Ping §8» §a%player_ping%ms'
+      - ''
+      - '§7Navigation §8» §b/servers'
+      - '§7Website §8» <#00D9FF>https://teenfounders.in'
+      - '§8§m-------------------'
+      title: <#00D9FF>&lTEENFOUNDERS
+  toggle-command: /sb
+scoreboard-teams:
+  enabled: true
+tablist-name-formatting:
+  enabled: true
+use-online-uuid-in-tablist: true
