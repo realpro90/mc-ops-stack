@@ -1,3 +1,12 @@
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fSERVERS'
+open_command:
+- servers
+- servermenu
+- hub
+- menu
+register_command: true
+size: 36
+
 items:
   border:
     display_name: '&8✦'
@@ -21,6 +30,7 @@ items:
     - 30
     - 32
     - 34
+
   brand:
     display_name: '&#00d9ff&l✦ TEENFOUNDERS NETWORK ✦'
     enchantments:
@@ -37,25 +47,50 @@ items:
     - '&#00d9ff&m---------------------------------'
     material: NETHER_STAR
     slot: 4
-  close:
-    display_name: '&c&l✕ CLOSE'
+
+  lobby:
+    display_name: '&#00d9ff&l✦ NETWORK LOBBY ✦'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
     left_click_commands:
-    - '[close]'
+    - '[connect] lobby'
     lore:
-    - '&7Dismiss this menu'
-    material: BARRIER
-    slot: 35
-  cosmetics_button:
-    display_name: '&e&l✨ COSMETICS WARDROBE'
-    left_click_commands:
-    - '[openguimenu] cosmetics'
-    lore:
-    - '&7Founder hats, particle effects,'
-    - '&7and wardrobe customization.'
+    - '&8&m-------------------------------'
+    - '&7Central Gathering Plaza'
     - ''
-    - '&e▶ Click to browse'
-    material: FEATHER
-    slot: 31
+    - '&8» &7Status: &aOnline'
+    - '&8» &7Location: &fMain Hub'
+    - ''
+    - '&7Explore network portals, meet fellow'
+    - '&7founders and check leaderboard.'
+    - '&8&m-------------------------------'
+    - '&#00d9ff▶ Click to Warp to Lobby'
+    material: COMPASS
+    slot: 11
+
+  survival:
+    display_name: '&a&l⚔ SURVIVAL SMP ⚔'
+    enchantments:
+    - UNBREAKING;1
+    hide_enchantments: true
+    left_click_commands:
+    - '[connect] survival'
+    lore:
+    - '&8&m-------------------------------'
+    - '&7Vanilla Community SMP & Economy'
+    - ''
+    - '&8» &7Status: &aOnline'
+    - '&8» &7Voice Chat: &aPort 24454 (UDP)'
+    - '&8» &7Economy: &a$500 Starting Cash'
+    - ''
+    - '&7Build your base, trade with founders,'
+    - '&7and survive together in proximity audio.'
+    - '&8&m-------------------------------'
+    - '&a▶ Click to Connect to Survival'
+    material: GRASS_BLOCK
+    slot: 13
+
   creative:
     display_name: '&d&l⚒ CREATIVE LAB ⚒'
     enchantments:
@@ -77,38 +112,21 @@ items:
     - '&d▶ Click to Connect to Creative'
     material: DIAMOND_PICKAXE
     slot: 15
-  info_button:
-    display_name: '&#00d9ff&l📖 COMMUNITY & INFO'
+
+  rankup_button:
+    display_name: '&#00d9ff&l★ RANKUP LADDER'
     left_click_commands:
-    - '[openguimenu] info'
+    - '[openguimenu] rankup'
     lore:
-    - '&7About TeenFounders, rules,'
-    - '&7social links & documentation.'
+    - '&8&m---------------------------------'
+    - '&7Advance your founder rank:'
+    - '  &8• &f[PLAYER] &8» &6[VIP] &8» &#00d9ff[FOUNDER]'
     - ''
-    - '&#00d9ff▶ Click for network info'
-    material: BOOK
-    slot: 33
-  lobby:
-    display_name: '&#00d9ff&l✦ LOBBY HUB ✦'
-    enchantments:
-    - UNBREAKING;1
-    hide_enchantments: true
-    left_click_commands:
-    - '[connect] lobby'
-    lore:
-    - '&8&m-------------------------------'
-    - '&7Central Network Meeting Point'
-    - ''
-    - '&8» &7Status: &aOnline'
-    - '&8» &7Server: &fLobby'
-    - '&8» &7Players: &#00d9ff%server_online%'
-    - ''
-    - '&7Explore network portals, meet fellow'
-    - '&7founders and check leaderboard.'
-    - '&8&m-------------------------------'
-    - '&#00d9ff▶ Click to Warp to Lobby'
-    material: COMPASS
-    slot: 11
+    - '&#00d9ff▶ Click to view ranks (/rankup)'
+    - '&8&m---------------------------------'
+    material: EXPERIENCE_BOTTLE
+    slot: 22
+
   profile_button:
     display_name: '&#00d9ff&l👤 YOUR PROFILE'
     left_click_commands:
@@ -120,46 +138,24 @@ items:
     - '&#00d9ff▶ Click to view profile'
     material: PLAYER_HEAD
     slot: 29
-  survival:
-    display_name: '&a&l⚔ SURVIVAL SMP ⚔'
-    enchantments:
-    - UNBREAKING;1
-    hide_enchantments: true
+
+  cosmetics_button:
+    display_name: '&e&l✨ COSMETICS WARDROBE'
     left_click_commands:
-    - '[connect] survival'
+    - '[openguimenu] cosmetics'
     lore:
-    - '&8&m-------------------------------'
-    - '&7Vanilla Community SMP & Economy'
+    - '&7Founder hats, particle effects,'
+    - '&7and wardrobe customization.'
     - ''
-    - '&8» &7Status: &aOnline'
-    - '&8» &7Voice Chat: &aPort 24454 (UDP)'
-    - '&8» &7PvP / Claims / Economy'
-    - ''
-    - '&7Build your base, trade with founders,'
-    - '&7and survive together in proximity audio.'
-    - '&8&m-------------------------------'
-    - '&a▶ Click to Connect to Survival'
-    material: GRASS_BLOCK
-    slot: 13
-  pvp_arena:
-    display_name: '&#00d9ff&l⚔ PVP COMBAT ARENA ⚔'
-    material: NETHERITE_SWORD
-    slot: 22
-    lore:
-    - '&8&m---------------------------------'
-    - '&7Gladiatorial combat zone at Survival spawn'
-    - '&7Features 4 custom kits (/kits):'
-    - '  &8• &bWarrior &8| &bArcher &8| &bTank &8| &bScout'
-    - '&8&m---------------------------------'
-    - '&#00d9ff▶ Click to enter Arena'
+    - '&e▶ Click to browse'
+    material: FEATHER
+    slot: 31
+
+  close:
+    display_name: '&c&l✕ CLOSE'
     left_click_commands:
-    - '[connect] survival'
-    - '[player] warp arena'
-menu_title: '&#00d9ff&lTEENFOUNDERS &8| &fSERVERS'
-open_command:
-- servers
-- servermenu
-- hub
-- menu
-register_command: true
-size: 36
+    - '[close]'
+    lore:
+    - '&7Dismiss this menu'
+    material: BARRIER
+    slot: 35
