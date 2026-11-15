@@ -140,23 +140,21 @@ items:
     - '[openguimenu] rankup'
 
   economy_sell:
-    display_name: '&#00d9ff&l💰 HOW TO EARN CURRENCY (/sell)'
+    display_name: '&#00d9ff&l💰 SELL MARKETPLACE & SHOP'
     material: GOLD_INGOT
     slot: 25
     lore:
     - '&8&m---------------------------------'
-    - '&7Earn money by mining, farming & trading:'
-    - '  &8• &b/sell hand &7- Sell held item'
-    - '  &8• &b/sell all &7- Sell all matching items'
-    - '  &8• &b/worth &7- Check item market value'
+    - '&7Sell your mined ores, crops &'
+    - '&7mob drops to earn coins & rank up!'
     - ''
-    - '&7Prices: Diamonds $100 | Gold $25 | Iron $10'
-    - '&7Netherite $2,500 | Crops $2 | Mob drops $1-2'
+    - '  &8• &b/sell &7or &b/shop &7- Open Sell GUI'
+    - '  &8• &b/sell hand &7- Sell held item'
+    - '  &8• &b/sell all &7- Sell all matching'
     - '&8&m---------------------------------'
-    - '&#00d9ff▶ Click to check worth of held item'
+    - '&#00d9ff▶ Click to open Sell Market (/sell)'
     left_click_commands:
-    - '[player] worth'
-    - '[close]'
+    - '[openguimenu] sell_gui'
 
   back:
     display_name: '&#00d9ff&l« ALL SERVERS'

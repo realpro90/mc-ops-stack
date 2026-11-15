@@ -1,15 +1,10 @@
-# DeluxeMenus 1.14.1-Release main configuration file
-#
-# A full wiki on how to use this plugin can be found at:
-# https://wiki.helpch.at/helpchat-plugins/deluxemenus
-
 check_updates: true
 debug: LOW
 gui_menus:
   rankup:
     file: rankup.yml
-  pvp_kits:
-    file: pvp_kits.yml
+  sell_gui:
+    file: sell_gui.yml
   advanced_menu:
     file: advanced_menu.yml
   basics_menu:

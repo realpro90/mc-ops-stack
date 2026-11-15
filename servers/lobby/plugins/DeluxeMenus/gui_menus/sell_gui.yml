@@ -1,0 +1,443 @@
+menu_title: '&#00d9ff&lTEENFOUNDERS &8| &6&lSELL MARKET'
+open_command:
+- sell
+- sellgui
+- shop
+- market
+- sellmenu
+register_command: true
+size: 54
+
+items:
+  border:
+    display_name: '&8✦'
+    material: GRAY_STAINED_GLASS_PANE
+    slots: [0, 1, 2, 3, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 46, 47, 48, 50, 51, 52]
+
+  header:
+    material: NETHER_STAR
+    slot: 4
+    display_name: '&#00d9ff&l✦ TEENFOUNDERS SELL MARKET ✦'
+    lore:
+    - '&#00d9ff&m---------------------------------'
+    - '  &fSell your resources, ores, crops &'
+    - '  &fmob drops to earn in-game coins!'
+    - ''
+    - '  &7Your Balance: &a$%vault_eco_balance_formatted%'
+    - '&#00d9ff&m---------------------------------'
+
+  # ─── ROW 2: ORES & MINING ─────────────────────────────────
+  sell_coal:
+    material: COAL
+    slot: 10
+    display_name: '&8&lCOAL'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$5.00 &7each | &a$320.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell coal 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell coal)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell coal 16'
+    right_click_commands:
+    - '[player] sell coal'
+
+  sell_raw_iron:
+    material: RAW_IRON
+    slot: 11
+    display_name: '&f&lRAW IRON'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$12.00 &7each | &a$768.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell raw_iron 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell raw_iron)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell raw_iron 16'
+    right_click_commands:
+    - '[player] sell raw_iron'
+
+  sell_iron_ingot:
+    material: IRON_INGOT
+    slot: 12
+    display_name: '&f&lIRON INGOT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$15.00 &7each | &a$960.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell iron_ingot 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell iron_ingot)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell iron_ingot 16'
+    right_click_commands:
+    - '[player] sell iron_ingot'
+
+  sell_gold_ingot:
+    material: GOLD_INGOT
+    slot: 13
+    display_name: '&6&lGOLD INGOT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$30.00 &7each | &a$1,920.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell gold_ingot 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell gold_ingot)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell gold_ingot 16'
+    right_click_commands:
+    - '[player] sell gold_ingot'
+
+  sell_diamond:
+    material: DIAMOND
+    slot: 14
+    display_name: '&#00d9ff&lDIAMOND'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$100.00 &7each | &a$6,400.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 1x (/sell diamond 1)'
+    - '&e▶ Right-Click: &fSell ALL (/sell diamond)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell diamond 1'
+    right_click_commands:
+    - '[player] sell diamond'
+
+  sell_emerald:
+    material: EMERALD
+    slot: 15
+    display_name: '&a&lEMERALD'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$150.00 &7each | &a$9,600.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 1x (/sell emerald 1)'
+    - '&e▶ Right-Click: &fSell ALL (/sell emerald)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell emerald 1'
+    right_click_commands:
+    - '[player] sell emerald'
+
+  sell_netherite:
+    material: NETHERITE_INGOT
+    slot: 16
+    display_name: '&5&lNETHERITE INGOT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$2,500.00 &7each'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 1x (/sell netherite_ingot 1)'
+    - '&e▶ Right-Click: &fSell ALL (/sell netherite_ingot)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell netherite_ingot 1'
+    right_click_commands:
+    - '[player] sell netherite_ingot'
+
+  # ─── ROW 3: FARMING & AGRICULTURE ─────────────────────────
+  sell_wheat:
+    material: WHEAT
+    slot: 19
+    display_name: '&e&lWHEAT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$3.00 &7each | &a$192.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell wheat 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell wheat)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell wheat 16'
+    right_click_commands:
+    - '[player] sell wheat'
+
+  sell_carrot:
+    material: CARROT
+    slot: 20
+    display_name: '&6&lCARROT'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$3.00 &7each | &a$192.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell carrot 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell carrot)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell carrot 16'
+    right_click_commands:
+    - '[player] sell carrot'
+
+  sell_potato:
+    material: POTATO
+    slot: 21
+    display_name: '&e&lPOTATO'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$3.00 &7each | &a$192.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell potato 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell potato)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell potato 16'
+    right_click_commands:
+    - '[player] sell potato'
+
+  sell_sugar_cane:
+    material: SUGAR_CANE
+    slot: 22
+    display_name: '&a&lSUGAR CANE'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$4.00 &7each | &a$256.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell sugar_cane 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell sugar_cane)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell sugar_cane 16'
+    right_click_commands:
+    - '[player] sell sugar_cane'
+
+  sell_pumpkin:
+    material: PUMPKIN
+    slot: 23
+    display_name: '&6&lPUMPKIN'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$10.00 &7each | &a$640.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell pumpkin 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell pumpkin)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell pumpkin 16'
+    right_click_commands:
+    - '[player] sell pumpkin'
+
+  sell_melon:
+    material: MELON_SLICE
+    slot: 24
+    display_name: '&a&lMELON SLICE'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$2.00 &7each | &a$128.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell melon_slice 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell melon_slice)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell melon_slice 16'
+    right_click_commands:
+    - '[player] sell melon_slice'
+
+  sell_berries:
+    material: SWEET_BERRIES
+    slot: 25
+    display_name: '&c&lSWEET BERRIES'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$2.00 &7each | &a$128.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell sweet_berries 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell sweet_berries)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell sweet_berries 16'
+    right_click_commands:
+    - '[player] sell sweet_berries'
+
+  # ─── ROW 4: MOB DROPS & HUNTING ───────────────────────────
+  sell_rotten_flesh:
+    material: ROTTEN_FLESH
+    slot: 28
+    display_name: '&c&lROTTEN FLESH'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$2.00 &7each | &a$128.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell rotten_flesh 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell rotten_flesh)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell rotten_flesh 16'
+    right_click_commands:
+    - '[player] sell rotten_flesh'
+
+  sell_bone:
+    material: BONE
+    slot: 29
+    display_name: '&f&lBONE'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$4.00 &7each | &a$256.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell bone 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell bone)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell bone 16'
+    right_click_commands:
+    - '[player] sell bone'
+
+  sell_string:
+    material: STRING
+    slot: 30
+    display_name: '&f&lSTRING'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$4.00 &7each | &a$256.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell string 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell string)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell string 16'
+    right_click_commands:
+    - '[player] sell string'
+
+  sell_gunpowder:
+    material: GUNPOWDER
+    slot: 31
+    display_name: '&7&lGUNPOWDER'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$8.00 &7each | &a$512.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell gunpowder 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell gunpowder)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell gunpowder 16'
+    right_click_commands:
+    - '[player] sell gunpowder'
+
+  sell_spider_eye:
+    material: SPIDER_EYE
+    slot: 32
+    display_name: '&4&lSPIDER EYE'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$5.00 &7each | &a$320.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell spider_eye 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell spider_eye)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell spider_eye 16'
+    right_click_commands:
+    - '[player] sell spider_eye'
+
+  sell_ender_pearl:
+    material: ENDER_PEARL
+    slot: 33
+    display_name: '&3&lENDER PEARL'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$20.00 &7each | &a$320.00 &7(16x)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 1x (/sell ender_pearl 1)'
+    - '&e▶ Right-Click: &fSell ALL (/sell ender_pearl)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell ender_pearl 1'
+    right_click_commands:
+    - '[player] sell ender_pearl'
+
+  sell_slime:
+    material: SLIME_BALL
+    slot: 34
+    display_name: '&a&lSLIME BALL'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Price: &a$15.00 &7each | &a$960.00 &7(stack)'
+    - ''
+    - '&#00d9ff▶ Left-Click: &fSell 16x (/sell slime_ball 16)'
+    - '&e▶ Right-Click: &fSell ALL (/sell slime_ball)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell slime_ball 16'
+    right_click_commands:
+    - '[player] sell slime_ball'
+
+  # ─── ROW 5: FAST BULK ACTIONS ─────────────────────────────
+  sell_all_action:
+    material: CHEST
+    slot: 38
+    display_name: '&#00d9ff&l⚡ SELL ALL INVENTORY'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Instantly sell every sellable item'
+    - '&7in your current inventory!'
+    - ''
+    - '&#00d9ff▶ Click to Sell ALL (/sell all)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell all'
+
+  sell_hand_action:
+    material: GOLD_BLOCK
+    slot: 40
+    display_name: '&#00d9ff&l✋ SELL ITEM IN HAND'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Instantly sell the item or stack'
+    - '&7you are currently holding.'
+    - ''
+    - '&#00d9ff▶ Click to Sell Held Item (/sell hand)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] sell hand'
+
+  rankup_action:
+    material: EXPERIENCE_BOTTLE
+    slot: 42
+    display_name: '&#00d9ff&l★ USE MONEY TO RANK UP'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Spend your earned currency to climb tiers:'
+    - '  &8• &f[PLAYER] &8» &6[VIP] &7($10,000)'
+    - '  &8• &6[VIP] &8» &#00d9ff[FOUNDER] &7($50,000)'
+    - ''
+    - '&#00d9ff▶ Click to Open Rankup Menu (/rankup)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[openguimenu] rankup'
+
+  # ─── ROW 6: NAVIGATION ────────────────────────────────────
+  back:
+    material: ARROW
+    slot: 45
+    display_name: '&#00d9ff&l« SURVIVAL MENU'
+    lore:
+    - '&7Return to main survival controls'
+    left_click_commands:
+    - '[openguimenu] survival_menu'
+
+  worth_info:
+    material: BOOK
+    slot: 49
+    display_name: '&#00d9ff&l🔍 CHECK WORTH OF HELD ITEM'
+    lore:
+    - '&8&m---------------------------------'
+    - '&7Hold any item and click here'
+    - '&7to see its sell price.'
+    - ''
+    - '&#00d9ff▶ Click to check worth (/worth)'
+    - '&8&m---------------------------------'
+    left_click_commands:
+    - '[player] worth'
+
+  close:
+    material: BARRIER
+    slot: 53
+    display_name: '&c&l✕ CLOSE'
+    lore:
+    - '&7Dismiss this marketplace'
+    left_click_commands:
+    - '[close]'
